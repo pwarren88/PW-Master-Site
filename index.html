@@ -35,6 +35,22 @@
   <!--<link href="css/creative.min.css" rel="stylesheet">-->
   <link href="css/gallery.css" rel="stylesheet">
 
+  <style>
+    #map {
+      height: 600px;
+      width: 100%;
+    }
+    
+    #yellowstoneMap {
+      width: 100%;
+      height: 100%;
+    }
+    
+    #firstHeading {
+      color: black;
+    }
+  </style>
+
 </head>
 
 <body id="page-top">
@@ -92,13 +108,18 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>About Me</h2>
-          <p>Hey! My name is Patrick and I am a Web Developer residing in Chicago, IL. I enjoy creating aesthetically pleasing
-            websites from visual design to back-end. I was an insurance auditor in a past life and one day I realized I needed
-            to find a career that would allow me to be creative. After conversations with a friend, I started exploring web
-            design. On route to becoming a web designer, I was introduced to the wonderful world of programming and I've
-            been hooked ever since. My interest in becoming a web developer drove me to enroll in Coding Temple in hopes
-            of making my dream a reality. Now that the course is over, I'm excited to find opportunities that will help me
-            expand the knowledge and skills I have learned.
+          <p>Hey! My name is Patrick and I am a Developer residing in Chicago, IL. I enjoy creating aesthetically pleasing websites
+            from visual design to back-end. I was in pension administration and finance in a past life and one day I realized
+            I needed to find a career that would allow me to be creative.
+          </p>
+          <p>
+            In my quest to start my career in development, I attended a full-time programming boot-camp at Coding Temple, a private organization
+            located in Chicago aimed at teaching Full-Stack Development in the .Net Framework and other related technologies.
+            Upon completion, I gained professional experience working on short software sprint building an application using
+            the .NET framework, SQL Server, and AngularJS. I'm excited continue developing my skills and to find opportunities that will help me expand my knowledge!
+          </p>
+          <p>
+            Some of my hobbies include playing basketball, reading, traveling, and photography. Check out a few of my pictures <a class="js-scroll-trigger" href="#portfolio">below</a>!
           </p>
         </div>
       </div>
@@ -107,8 +128,8 @@
 
   <!-- Education Section -->
   <section id="education" class="content-section text-center">
-
     <div class="container">
+      <h2>Education & Skills</h2>
       <div class="row">
         <div class="col-sm">
           <h3>Florida State University</h3>
@@ -126,12 +147,8 @@
             needed to enter the Web Development job market.</div>
         </div>
       </div>
-    </div>
-
-    <!-- <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>SKills</h2>
           <ul class="list-inline list-icons">
             <li class="list-inline-item">
               <i class="devicon-csharp-plain"></i>
@@ -166,23 +183,24 @@
           </ul>
         </div>
       </div>
-    </div> -->
+    </div>
   </section>
 
   <!-- Gallery Section -->
   <section id="portfolio" class="content-section text-center p-0">
     <div class="container-fluid p-0">
+      <h2>Gallery</h2>
       <div class="row no-gutters popup-gallery">
         <div class="col-lg-4 col-sm-6">
           <a class="portfolio-box" href="img/IMG_0070.jpg">
             <img class="img-fluid" src="img/IMG_0070.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
+                <!--<div class="project-category text-faded">
                   Category
-                </div>
+                </div>-->
                 <div class="project-name">
-                  Project Name
+                  Minneapolis, MN
                 </div>
               </div>
             </div>
@@ -193,11 +211,11 @@
             <img class="img-fluid" src="img/IMG_0107.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
+                <!--<div class="project-category text-faded">
                   Category
-                </div>
+                </div>-->
                 <div class="project-name">
-                  Project Name
+                  Fargo, ND
                 </div>
               </div>
             </div>
@@ -208,11 +226,11 @@
             <img class="img-fluid" src="img/IMG_0149.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
+                <!--<div class="project-category text-faded">
                   Category
-                </div>
+                </div>-->
                 <div class="project-name">
-                  Project Name
+                  Badlands - Roosevelt National Park, ND
                 </div>
               </div>
             </div>
@@ -223,11 +241,11 @@
             <img class="img-fluid" src="img/IMG_0159.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
+                <!--<div class="project-category text-faded">
                   Category
-                </div>
+                </div>-->
                 <div class="project-name">
-                  Project Name
+                  Little Bighorn Battlefield - MT
                 </div>
               </div>
             </div>
@@ -238,11 +256,11 @@
             <img class="img-fluid" src="img/IMG_0334.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
+                <!--<div class="project-category text-faded">
                   Category
-                </div>
+                </div>-->
                 <div class="project-name">
-                  Project Name
+                  Yellowstone Lake - WY
                 </div>
               </div>
             </div>
@@ -253,17 +271,19 @@
             <img class="img-fluid" src="img/IMG_0387.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
+                <!--<div class="project-category text-faded">
                   Category
-                </div>
+                </div>-->
                 <div class="project-name">
-                  Project Name
+                  Buffalo Bill - Cody, WY
                 </div>
               </div>
             </div>
           </a>
         </div>
       </div>
+      <h2>Map Gallery</h2>
+      <div id="map"></div>
     </div>
   </section>
 
@@ -272,7 +292,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2>Contact Info</h2>
+          <h2>Contact</h2>
           <ul class="list-inline banner-social-buttons">
             <li class="list-inline-item">
               <a href="mailto:patrick.warren1988@gmail.com" target="_top" class="btn btn-default btn-lg">
@@ -319,34 +339,98 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-  
-  <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
-  <!-- Custom scripts for this template -->
-  <script src="js/creative.min.js"></script>
 
-
-  <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
-  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.js"></script>
+  <!-- Custom scripts for this template -->
+  <!--<script src="js/creative.js"></script>-->
 
   <!-- Ekko Lightbox JS | http://ashleydw.github.io/lightbox/#image-gallery -->
   <script>
-    // $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-    //   event.preventDefault();
-    //   $(this).ekkoLightbox();
-    // });
-
-    // Closes responsive menu when a scroll trigger link is clicked
-    // $('.js-scroll-trigger').click(function () {
-    //   $('.navbar-collapse').collapse('hide');
-    // });
+    $(document).ready(function () {
+      $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+          tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+          titleSrc: function (item) {
+            // return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+          }
+        }
+      });
+    });
   </script>
 
   <script>
-    // $(document).ready(function () {
-    //   $('.image-link').magnificPopup({ type: 'image' });
-    // });
+    function initMap() {
+      var chicago = { lat: 41.87, lng: -87.6298 };
+      var yellowstone = { lat: 44.42, lng: -110.59 };
+
+      var uluru = { lat: 37.0902, lng: -95.71294 };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: uluru
+      });
+
+      var contentString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+        '<div id="bodyContent">' +
+        '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+        'sandstone rock formation in the southern part of the ' +
+        'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
+        'south west of the nearest large town, Alice Springs; 450&#160;km ' +
+        '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
+        'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
+        'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
+        'Aboriginal people of the area. It has many springs, waterholes, ' +
+        'rock caves and ancient paintings. Uluru is listed as a World ' +
+        'Heritage Site.</p>' +
+        '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+        'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
+        '(last visited June 22, 2009).</p>' +
+        '</div>' +
+        '</div>';
+
+      var contentString2 = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h1 id="firstHeading" class="firstHeading">Yellowstone Lake</h1>' +
+        '<div id="bodyContent">' +
+        '<img id="yellowstoneMap" class="img-fluid" src="img/IMG_0334.jpg">' +
+        '</div>';
+
+      //Opens Info Window
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString2,
+      });
+
+      var marker = new google.maps.Marker({
+        position: chicago,
+        map: map
+      });
+      var marker2 = new google.maps.Marker({
+        position: yellowstone,
+        map: map
+      });
+      //Opens Marker Info Windows
+      marker.addListener('click', function () {
+        infowindow.open(map, marker);
+      });
+      marker2.addListener('click', function () {
+        infowindow.open(map, marker);
+      });
+    }
   </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG3uDD4arHX03QYhbQleffY4Z1SZN9JR8&callback=initMap"></script>
 
 </body>
 
